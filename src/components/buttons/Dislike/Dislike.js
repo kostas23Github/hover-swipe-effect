@@ -5,7 +5,7 @@ import './Dislike.css'
 class Dislike extends Component {
   render() {
     return (
-        <span onClick={() => this.props.onclick('dislike')}className="material-symbols-outlined like">close</span>
+        <span onClick={() => this.props.onclick('dislike')}className="material-symbols-outlined dislike">close</span>
     )
   }
 }

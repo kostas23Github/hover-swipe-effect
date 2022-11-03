@@ -1,16 +1,12 @@
 import React, { Component } from 'react'
 import './CardsContainer.css';
-import BigCard1 from './big-cards/BigCard1/BigCard1'
-import BigCard2 from './big-cards/BigCard2/BigCard2'
-import BigCard3 from './big-cards/BigCard3/BigCard3'
-import BigCard4 from './big-cards/BigCard4/BigCard4'
-import SmallCard1 from './small-cards/SmallCard1/SmallCard1'
-import SmallCard2 from './small-cards/SmallCard2/SmallCard2'
-import SmallCard3 from './small-cards/SmallCard3/SmallCard3'
-import SmallCard4 from './small-cards/SmallCard4/SmallCard4'
+import BigCard from './big-cards/BigCard'
+import SmallCard from './small-cards/SmallCard'
 
 // Wrapper/Container of all big cards
 class CardsContainer extends Component {
+  // Each attr name: value is used to store each container's state (visibleL -> became visible from the left)  
+  // The order attr is used to separate each SmallCard/BigCard components pair (order='one' is the first component of the container etc) 
   render() {
     return (
       <div
@@ -19,14 +15,14 @@ class CardsContainer extends Component {
         statustwo={this.props.statustwo}
         statusthree={this.props.statusthree}
       >
-        <SmallCard1 className='small-card' />
-        <BigCard1 className='big-card' />
-        <SmallCard2 className='small-card' />
-        <BigCard2 className='big-card' />
-        <SmallCard3 className='small-card' />
-        <BigCard3 className='big-card' />
-        <SmallCard4 className='small-card' />
-        <BigCard4 className='big-card' />
+        <SmallCard className='small-card' order='one' />
+        <BigCard className='big-card' order='one' />
+        <SmallCard className='small-card' order='two' />
+        <BigCard className='big-card' order='two' />
+        <SmallCard className='small-card' order='three' />
+        <BigCard className='big-card' order='three' />
+        <SmallCard className='small-card' order='four' />
+        <BigCard className='big-card' order='four' />
       </div>
     )
   }

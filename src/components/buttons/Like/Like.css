@@ -1,6 +1,5 @@
 .like {
     color: steelblue;
-    border-color: steelblue;
 }
 .like:hover {
     transform: scale(1.2);

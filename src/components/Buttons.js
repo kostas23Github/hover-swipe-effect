@@ -5,7 +5,6 @@ import Like from './buttons/Like/Like'
 class Buttons extends Component {
 
   render() {
-    // console.log(this.props)
     return (
       <div className='buttons'>
         <Dislike onclick={this.props.handleSwipe} />

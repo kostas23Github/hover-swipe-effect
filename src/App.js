@@ -17,7 +17,13 @@ class App extends Component {
 
     this.handleSwipe = this.handleSwipe.bind(this);
   }
-  // Computed variable
+
+  // Click handler for swipe
+  // Computed variables for state.keys [`container${id}`]
+  // visibleL -> becomes visible from the left
+  // visibleR -> becomes visible from the right
+  // hiddenL -> becomes hidden and moves to the left
+  // hiddenR -> becomes hidden and moves to the right
   handleSwipe = (action) => {
     const { id } = this.state;
     let containerLength = Object.keys(this.state).length - 1;
@@ -30,7 +36,7 @@ class App extends Component {
             [`container${id + 1}`]: 'visibleR',
             id: id + 1
           });
-        } else if (id === containerLength) {
+        } else if (id === containerLength) { // edge case (moves to the first container)
           return this.setState({
             ...this.state,
             [`container${id}`]: 'hiddenR',
@@ -47,7 +53,7 @@ class App extends Component {
             [`container${id - 1}`]: 'visibleL',
             id: id - 1
           });
-        } else if (id === 1) {
+        } else if (id === 1) { // edge case (moves to the last container)
           return this.setState({
             ...this.state,
             [`container${id}`]: 'hiddenL',
@@ -62,9 +68,8 @@ class App extends Component {
         })
     }
   }
-
+  // The status attr shows which container is hidden/visible
   render() {
-    // console.log(this.state);
     return (
       <>
         <CardsContainer className='cards-container' statusone={this.state.container1} />

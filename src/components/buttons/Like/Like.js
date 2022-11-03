@@ -7,7 +7,6 @@ class Like extends Component {
     return (
       <span
         onClick={() => {
-          // e.preventDefault()
           this.props.onclick('like')
         }}
         className="material-symbols-outlined like">

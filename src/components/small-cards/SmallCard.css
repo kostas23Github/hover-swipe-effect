@@ -1,0 +1,108 @@
+.small-card {
+    aspect-ratio: 5/7;
+    width: 15vmin;
+    border-radius: 2vmin;
+    position: absolute;
+    transform: translate(80%, 80%);
+    box-shadow: 0px 0px 5vmin rgb(60, 60, 60);
+    background-color: rgb(255, 255, 255, 0.3);
+    color: red;
+    font-size: 8vmin;
+    text-align: center;
+}
+
+.small-card[order='one'] {
+    transition: 600ms cubic-bezier(.04, .48, .47, .96);
+}
+
+.cards-container:hover .small-card[order='one'] {
+    transform: translate(-140%, 280%) rotate(-10deg); 
+    transition: 600ms cubic-bezier(.04, .48, .47, .96);
+}
+
+.cards-container[statusone] > .small-card[order='one'] {
+    background-image: url('../../images/small-cards/aceofnet-wePe5kucoHA-unsplash.jpg');
+    background-size: cover;
+}
+
+.cards-container[statustwo] >.small-card[order='one'] {
+    background-image: url('../../images/small-cards/ben-hershey-Zjcf_V3DPVI-unsplash.jpg');
+    background-size: cover;
+}
+
+.cards-container[statusthree] >.small-card[order='one'] {
+    background-image: url('../../images/small-cards/garvit-3IyjBegTXLA-unsplash.jpg');
+    background-size: cover;
+}
+
+.small-card[order='two'] {
+    transition: 600ms cubic-bezier(.04, .48, .47, .96);
+}
+
+.cards-container:hover .small-card[order='two'] {
+    transform: translate(-90%, -90%) rotate(10deg);
+    transition: 600ms cubic-bezier(.04, .48, .47, .96);
+}
+
+.cards-container[statusone] > .small-card[order='two'] {
+    background-image: url('../../images/small-cards/mika-baumeister-HUyICL8qbEE-unsplash.jpg');
+    background-size: cover;
+}
+
+.cards-container[statustwo] >.small-card[order='two'] {
+    background-image: url('../../images/small-cards/nadine-shaabana-YsPnamiHdmI-unsplash.jpg');
+    background-size: cover;
+}
+
+.cards-container[statusthree] >.small-card[order='two'] {
+    background-image: url('../../images/small-cards/ori-song-e3mdGTkCGAQ-unsplash.jpg');
+    background-size: cover;
+}
+
+.small-card[order='three'] {
+    transition: 600ms cubic-bezier(.04, .48, .47, .96);
+}
+
+.cards-container:hover .small-card[order='three'] {
+    transform: translate(230%, -100%) rotate(-10deg);
+    transition: 600ms cubic-bezier(.04, .48, .47, .96);
+}
+
+.cards-container[statusone] > .small-card[order='three'] {
+    background-image: url('../../images/small-cards/sebastiaan-stam-5hBREM-5mnQ-unsplash.jpg');
+    background-size: cover;
+}
+
+.cards-container[statustwo] >.small-card[order='three'] {
+    background-image: url('../../images/small-cards/shark-ovski-jZ9TPXjoZQk-unsplash.jpg');
+    background-size: cover;
+}
+
+.cards-container[statusthree] >.small-card[order='three'] {
+    background-image: url('../../images/small-cards/victor-freitas-qZ-U9z4TQ6A-unsplash.jpg');
+    background-size: cover;
+}
+
+.small-card[order='four'] {
+    transition: 600ms cubic-bezier(.04, .48, .47, .96);
+}
+
+.cards-container:hover .small-card[order='four'] {
+    transform: translate(300%, 280%) rotate(10deg);
+    transition: 600ms cubic-bezier(.04, .48, .47, .96);
+}
+
+.cards-container[statusone] > .small-card[order='four'] {
+    background-image: url('../../images/small-cards/victor-freitas-Yuv-iwByVRQ-unsplash.jpg');
+    background-size: cover;
+}
+
+.cards-container[statustwo] >.small-card[order='four'] {
+    background-image: url('../../images/small-cards/virgil-cayasa-lskYDE0WKJg-unsplash.jpg');
+    background-size: cover;
+}
+
+.cards-container[statusthree] >.small-card[order='four'] {
+    background-image: url('../../images/small-cards/doruk-bayram-gs3duh5iqkw-unsplash.jpg');
+    background-size: cover;
+}
