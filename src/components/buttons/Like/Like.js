@@ -10,7 +10,7 @@ class Like extends Component {
           this.props.onclick('like')
         }}
         className="material-symbols-outlined like">
-        favorite
+        thumb_up
       </span>
     )
   }
