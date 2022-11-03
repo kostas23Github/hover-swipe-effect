@@ -1,0 +1,86 @@
+/* since elements are positioned absolute they dont affect the size of the this.wrapper element, so i set it to the same size as the cards */
+.cards-container {
+    position: absolute;
+    width: 40vmin;
+    aspect-ratio: 5/7;
+}
+
+.hidden {
+    transform: scale(0);
+}
+
+/* EXPANDING RIGHT */
+.visibleR {
+    animation: visibleR 500ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes visibleR {
+    0% {
+        transform: translate(-80%, 0) scale(0);
+    }
+
+    100% {
+        transform: translate(0%, 0) scale(1);
+    }
+
+    /* 100% {
+        transform: translate(80%, 0) scale(1);
+    } */
+}
+
+/* SHRINKING RIGHT */
+.hiddenR {
+    animation: hiddenR 500ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hiddenR {
+    0% {
+        transform: translate(0%, 0) scale(1);
+    }
+
+    99% {
+        transform: translate(80%, 0) scale(0);
+    }
+
+    100% {
+        transform: translate(-80%, 0) scale(0);
+    }
+}
+
+/* EXPANDING LEFT */
+.visibleL {
+    animation: visibleL 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes visibleL {
+    0% {
+        transform: translate(80%, 0) scale(0);
+    }
+
+    100% {
+        transform: translate(0%, 0%) scale(1);
+    }
+}
+
+/*  SHRINKING LEFT */
+.hiddenL {
+    animation: hiddenL 500ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hiddenL {
+    0% {
+        transform: translate(0%, 0) scale(1);
+    }
+
+    99% {
+        transform: translate(-80%, 0) scale(0);
+    }
+
+    100% {
+        transform: translate(80%, 0) scale(0);
+    }
+}

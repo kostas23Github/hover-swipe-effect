@@ -1,0 +1,23 @@
+.fourthSmall {
+    transition: 600ms cubic-bezier(.04, .48, .47, .96);
+}
+
+.cards-container:hover .fourthSmall {
+    transform: translate(300%, 280%) rotate(10deg);
+    transition: 600ms cubic-bezier(.04, .48, .47, .96);
+}
+
+.cards-container[statusone] > .fourthSmall {
+    background-image: url('../../../images/small-cards/victor-freitas-Yuv-iwByVRQ-unsplash.jpg');
+    background-size: cover;
+}
+
+.cards-container[statustwo] >.fourthSmall {
+    background-image: url('../../../images/small-cards/virgil-cayasa-lskYDE0WKJg-unsplash.jpg');
+    background-size: cover;
+}
+
+.cards-container[statusthree] >.fourthSmall {
+    background-image: url('../../../images/small-cards/doruk-bayram-gs3duh5iqkw-unsplash.jpg');
+    background-size: cover;
+}

@@ -1,0 +1,24 @@
+.firstBig {
+    transform: translate(-2%, 0%) rotate(-3deg);
+    transition: 400ms ease-in-out;
+}
+
+.cards-container:hover .firstBig {
+    transform: translate(-80%, 7%) rotate(-15deg);
+    transition: 400ms ease-in-out;
+}
+
+.cards-container[statusone] > .firstBig {
+    background-image: url('../../../images/big-cards/ali-morshedlou-WMD64tMfc4k-unsplash.jpg');
+    background-size: cover;
+}
+
+.cards-container[statustwo] >.firstBig {
+    background-image: url('../../../images/big-cards/brooke-cagle-HRZUzoX1e6w-unsplash.jpg');
+    background-size: cover;
+}
+
+.cards-container[statusthree] >.firstBig {
+    background-image: url('../../../images/big-cards/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg');
+    background-size: cover;
+}

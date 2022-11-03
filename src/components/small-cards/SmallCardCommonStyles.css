@@ -1,0 +1,12 @@
+.small-card {
+    aspect-ratio: 5/7;
+    width: 15vmin;
+    border-radius: 2vmin;
+    position: absolute;
+    transform: translate(80%, 80%);
+    box-shadow: 0px 0px 5vmin rgb(60, 60, 60);
+    background-color: rgb(255, 255, 255, 0.3);
+    color: red;
+    font-size: 8vmin;
+    text-align: center;
+}

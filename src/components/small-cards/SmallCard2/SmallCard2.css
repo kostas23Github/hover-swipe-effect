@@ -1,0 +1,23 @@
+.secondSmall {
+    transition: 600ms cubic-bezier(.04, .48, .47, .96);
+}
+
+.cards-container:hover .secondSmall {
+    transform: translate(-90%, -90%) rotate(10deg);
+    transition: 600ms cubic-bezier(.04, .48, .47, .96);
+}
+
+.cards-container[statusone] > .secondSmall {
+    background-image: url('../../../images/small-cards/mika-baumeister-HUyICL8qbEE-unsplash.jpg');
+    background-size: cover;
+}
+
+.cards-container[statustwo] >.secondSmall {
+    background-image: url('../../../images/small-cards/nadine-shaabana-YsPnamiHdmI-unsplash.jpg');
+    background-size: cover;
+}
+
+.cards-container[statusthree] >.secondSmall {
+    background-image: url('../../../images/small-cards/ori-song-e3mdGTkCGAQ-unsplash.jpg');
+    background-size: cover;
+}
