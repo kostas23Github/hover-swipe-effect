@@ -1,4 +1,4 @@
-/* since elements are positioned absolute they dont affect the size of the this.wrapper element, so i set it to the same size as the cards */
+/* since elements are positioned absolute they dont affect the size of the this.wrapper element, so i set it to the same size as the cards. That way they are placed in the middle of the grid as the wrapper(they occupy the same space). */
 .cards-container {
     position: absolute;
     width: 40vmin;
@@ -39,7 +39,7 @@
     99% {
         transform: translate(80%, 0) scale(0);
     }
-
+/* To put it where i want it to appear from, otherwise it will appear from the 99% place. */
     100% {
         transform: translate(-80%, 0) scale(0);
     }
