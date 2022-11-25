@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
+import Preloader from './components/preloader/Preloader';
 import CardsContainer from './components/CardsContainer';
 import Buttons from './components/Buttons';
 import './components/CardsContainer.css';
@@ -72,6 +73,7 @@ class App extends Component {
   render() {
     return (
       <>
+        <Preloader />
         <CardsContainer className='cards-container' statusone={this.state.container1} />
         <CardsContainer className='cards-container' statustwo={this.state.container2} />
         <CardsContainer className='cards-container' statusthree={this.state.container3} />
